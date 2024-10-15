@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html lang="id"
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Utama</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hsl(0, 0%, 62%);
+        }
         table {
             width: 100%;
             border-collapse: collapse;
+            border: 1px solid #ffffff;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
         }
-        table, th, td{
-            border: 1px solid rgb(0, 0, 0);
+        th, td {
+            border: 1px solid #000000;
             text-align: center;
-            padding: 8px;
+            padding: 12px;
         }
-        img{
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
+        th {
+            background-color: #2b8ea7;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            object-fit: square;
         }
     </style>
 </head>
@@ -39,26 +52,27 @@
                 <td>1</td>
                 <td>Azka Acuzio Raines Respati</td>
                 <td>Pria</td>
-                <td><img style="width:20px size:fit-content" src="azka.jpg"></td>
+                <td><img src="azka.jpg"></td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Muhammad Ilham Furrozan Firdaus</td>
                 <td>Pria</td>
-                <td><img style="width:20px size:fit-content" src="ilham.jpg"></td>
+                <td><img src="ilham.jpg"></td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>Raihan Firdaus Hadi Saputra</td>
                 <td>Pria</td>
-                <td><img style="width:20px size:fit-content" src="raihan.png"></td>
+                <td><img src="raihan.png"></td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>Dimas Bagas Aditya</td>
                 <td>Pria</td>
-                <td><img style="width:20px size:fit-content" src="bagas.jpg"></td>
+                <td><img src="bagas.jpg"></td>
             </tr>
         </tbody>
     </table>
 </body>
+</html>
