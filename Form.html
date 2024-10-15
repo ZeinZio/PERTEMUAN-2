@@ -1,27 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Halaman Mahasiswa</title>
-        <link rel="stylesheet" href="form.css"/>
-    </head>
-    <body> 
-        <h1 id="Daftar_Mahasiswa">Daftar Mahasiswa</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Mahasiswa</title>
+    <link rel="stylesheet" href="form.css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #818181;
+        }
+        .container {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #20a29b; 
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: #205699;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+        }
+        .header h1 {
+            color: #fff; 
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="Daftar_Mahasiswa">Daftar Mahasiswa</h1>
+        </div>
         <form>
-            <label> Nama :</label>
-            <input type="text"/> <br>
-            <label> NIM: </label>
-            <input type="number" name="number" /><br />
-            <label> Jenis Kelamin: </label>
-            <input type="radio" name="jenis-kelamin" /> Pria
-            <input type="radio" name="jenis-kelamin" />Wanita<br />
-            <label> Foto: </label>
-            <input type="file" name="foto" /><br />
-            <label> Submit: </label>
-            <input type="submit" name="submit" /><br />
-
-
+            <div class="form-group">
+                <label>Nama :</label>
+                <input type="text" placeholder="Masukkan nama Anda"/>
+            </div>
+            <div class="form-group">
+                <label>NIM: </label>
+                <input type="number" name="number" placeholder="Masukkan NIM Anda"/>
+            </div>
+            <div class="form-group">
+                <label for='jenis-kelamin'>Jenis Kelamin</label>
+                <select id="jenis-kelamin" name="jenis_kelamin">
+                    <option value="lk">Laki-laki</option>
+                    <option value="pr">Perempuan</option>
+                    <option value="rahasia">Rahasia</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" name="submit" value="Sumbit"/>
+            </div>
         </form>
-    </body>
+    </div>
+</body>
 </html>
